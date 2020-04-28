@@ -13,3 +13,8 @@
 
 # Dependency directories (remove the comment below to include it)
 # vendor/
+
+credentials.json
+token.json
+key.json
+*.json
