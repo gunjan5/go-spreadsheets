@@ -32,7 +32,7 @@ metadata:
             "SYSTEMD_ENABLED": "",
             "consoleImageName": "registry-auth.twistlock.com/tw_<REPLACE_TWISTLOCK_TOKEN>/twistlock/console:console_<VERSION>",
             "namespace": "twistlock",
-            "openshift": false,
+            "openshift": true,
             "persistentVolumeDataFolder": "var/lib/twistlock",
             "persistentVolumeDataRecoveryFolder": "var/lib/twistlock-backup",
             "persistentVolumeStorage": "100Gi",
