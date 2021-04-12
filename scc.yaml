@@ -1,0 +1,28 @@
+allowHostDirVolumePlugin: true
+allowHostIPC: false
+allowHostNetwork: false
+allowHostPID: false
+allowHostPorts: false
+allowPrivilegedContainer: false
+allowedCapabilities: []
+apiVersion: security.openshift.io/v1
+defaultAddCapabilities: []
+fsGroup: 
+  type: RunAsAny
+kind: SecurityContextConstraints
+metadata: 
+  name: twistlock-console
+priority: 0
+readOnlyRootFilesystem: true
+requiredDropCapabilities: []
+runAsUser: 
+  type: RunAsAny
+seLinuxContext: 
+  type: RunAsAny
+supplementalGroups: 
+  type: RunAsAny
+users: 
+  - "system:serviceaccount:twistlock:twistlock-console"
+volumes: 
+  - "*"
+
